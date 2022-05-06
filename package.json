@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "sass": "^1.50.0"
+  },
+  "scripts": {
+    "style": "sass --watch  shelter/sass/index.scss shelter/compiled-stylesheets/index.css"
+  }
+}

@@ -1,0 +1,96 @@
+.pets_gallery_flex_to_grid {
+  display: grid;
+  grid-template-areas:
+    "pet-cards pet-cards"
+    "left-arr right-arr";
+  row-gap: 20px;
+  align-content: center;
+  justify-content: center;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+  }
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+    column-gap: 53px;
+  }
+}
+
+.left_arr_for_grid {
+  grid-area: left-arr;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  order: 2;
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+  @media (min-width: $desktop-width) {
+    order: 1;
+  }
+}
+
+.right_arr_for_grid {
+  grid-area: right-arr;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  order: 3;
+  @media (min-width: $tablet-width) {
+    order: 3;
+  }
+  @media (min-width: $desktop-width) {
+    order: 3;
+  }
+}
+
+.pet_cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-wrap: wrap;
+  max-height: 435px;
+  max-width: 270px;
+  order: 1;
+  grid-area: pet-cards;
+  @media (min-width: $tablet-width) {
+    column-gap: 40px;
+    row-gap: 0px;
+    max-width: 580px;
+    order: 2;
+  }
+  @media (min-width: $desktop-width) {
+    column-gap: 90px;
+    row-gap: 90px;
+    max-width: 994px;
+    order: 2;
+  }
+}
+
+// pets page
+
+.pets_gallery_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10px, 270px));
+  row-gap: 30px;
+  column-gap: 40px;
+  max-width: $content-width;
+  justify-content: center;
+  @media (max-width: 768px) {
+    max-height: 1365px;
+    overflow: hidden;
+  }
+}
+
+.pets_gallery__buttons_set {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  align-items: center;
+  @media (max-width: 768px) {
+    padding-top: 10px;
+  }
+}

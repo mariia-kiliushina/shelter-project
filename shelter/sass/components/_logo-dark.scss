@@ -1,0 +1,45 @@
+.logo_dark {
+  grid-area: "logo";
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 43px;
+  align-self: flex-start;
+  @media (min-width: 768px) {
+    align-self: auto;
+  }
+}
+
+.logo_dark__text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.logo_dark h1 {
+  color: $color-primary;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0.06em;
+  text-align: left;
+  margin: 0px;
+}
+.logo_dark p {
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: $color-light-xl;
+  letter-spacing: 0.1em;
+}
+
+.logo_dark_burger {
+  width: 30px;
+  height: 30px;
+  @media (min-width: $tablet-width) {
+    width: 0px;
+    height: 0px;
+  }
+}

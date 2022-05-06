@@ -1,0 +1,25 @@
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  row-gap: 40px;
+  grid-area: "nav";
+  align-items: center;
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    column-gap: 35px;
+  }
+}
+
+nav a {
+  font-family: "Arial", "Helvetica", sans-serif;
+  text-decoration: none;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  font-size: 32px;
+  line-height: 160%;
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+  }
+}

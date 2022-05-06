@@ -1,0 +1,31 @@
+.icons__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 20px;
+  font-size: 15px;
+  line-height: 110%;
+  width: 130px;
+  height: 87px;
+  @media (min-width: 768px) {
+    row-gap: 30px;
+    font-size: 20px;
+    line-height: 115%;
+    width: 170px;
+    height: 113px;
+  }
+  @media (min-width: $desktop-width) {
+    width: auto;
+    height: auto;
+  }
+}
+
+.icons__icon img {
+  width: 50px;
+  height: 50px;
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 60px;
+  }
+}

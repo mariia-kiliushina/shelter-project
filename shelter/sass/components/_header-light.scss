@@ -1,0 +1,22 @@
+.header_sticky {
+  position: sticky;
+  top: 0;
+  background-color: $color-light-xl;
+}
+
+.header_light {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.header_light_container {
+  padding: 30px 10px;
+  @media (min-width: $tablet-width) {
+    padding: 30px;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 30px 40px;
+  }
+}

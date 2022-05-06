@@ -1,0 +1,17 @@
+.nav_light {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 35px;
+  grid-area: "nav";
+  align-items: center;
+}
+.nav_light a {
+  color: #545454;
+}
+.nav_light a:hover {
+  color: #292929;
+}
+.nav_light a.active {
+  color: #292929;
+  border-bottom: 3px solid #f1cdb3;
+}

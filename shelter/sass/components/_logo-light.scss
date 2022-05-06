@@ -1,0 +1,30 @@
+.logo_light {
+  grid-area: "logo";
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.logo_light h1 {
+  color: #545454;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0.06em;
+  text-align: left;
+  margin: 0px;
+}
+.logo_light p {
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #292929;
+  letter-spacing: 0.1em;
+}
+
+.sticky {
+  position: sticky;
+  top: 0px;
+}

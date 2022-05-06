@@ -1,0 +1,65 @@
+button {
+  padding: 15px 45px;
+  border-radius: 100px;
+  font-family: inherit;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  letter-spacing: 0.06em;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button.primary {
+  background-color: $color-primary;
+  border: none;
+  color: $color-dark-3xl;
+}
+button.primary:hover {
+  background-color: $color-primary-light;
+}
+
+button.secondary {
+  background-color: transparent;
+  border: 2px solid $color-primary;
+  color: $color-dark-3xl;
+}
+button.secondary:hover {
+  background-color: $color-primary-light;
+  border: 2px solid $color-primary-light;
+}
+
+button.round {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  min-width: 52px;
+  padding: unset;
+}
+
+button.round.arrow img {
+  height: 6px;
+  width: 14px;
+}
+
+button.secondary.round:active {
+  background-color: $color-primary;
+  border: 2px solid $color-primary;
+}
+
+button.secondary.round:disabled {
+  border: 2px solid $color-dark-s;
+  color: $color-dark-s;
+  pointer-events: none;
+}
+
+.our_friends__button {
+  padding-top: 30px;
+}
